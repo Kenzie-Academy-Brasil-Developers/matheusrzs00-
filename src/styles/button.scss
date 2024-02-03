@@ -1,0 +1,15 @@
+.btn {
+    height: 3.75rem;
+    padding: 0rem 1.25rem;
+    color: var(--grey-scale-0);
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: var(--grey-scale-300);
+    border-radius: 0.5rem;
+    border: 2px solid var(--grey-scale-300);
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--color-primary);
+
+}

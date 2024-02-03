@@ -1,0 +1,31 @@
+
+@mixin tag-display ($font-size: 1.625rem, $font-weight: 700, $color: var(--grey-scale-600), $line-height: 2.125rem) {
+
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+    line-height: $line-height;
+}
+.title1{
+    @include tag-display();
+}
+.title2 {
+    @include tag-display($font-size: 1.375rem, $line-height: 1.5rem,)
+}
+.title3 {
+    @include tag-display($font-size: 1.125rem)
+}
+.headline {
+    @include tag-display($font-weight: 400, $font-size: 0.875rem, $line-height: normal, $color: var(--grey-scale-300))
+}
+.value {
+    @include tag-display($line-height: 1.5rem, $font-size: 0.875rem, $font-weight: 600, $color: var(--color-primary));
+
+        &.total{
+            color: var(--grey-scale-600);
+        }
+        &.totalValue{
+            color: var(--grey-scale-300);
+        }
+}
+

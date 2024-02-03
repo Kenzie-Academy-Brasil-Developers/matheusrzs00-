@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: flex-start;
+    margin: 1rem auto;
+
+    & li {
+        border: 2px solid var(--grey-scale-100);
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 18.25rem;
+        & img {
+            width: 10rem;
+            height: 10rem;
+            align-self: center;
+        }
+        
+        & div {
+            display: flex;
+            width: 15rem;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 1rem;
+            gap: 1rem;
+            
+            & button {
+                height: 2.5rem;
+            }
+        }
+    }
+    
+    li:hover{
+        border: 2px solid var(--color-primary);
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        overflow: auto;
+        margin: 1.5rem;
+        flex-wrap: nowrap;
+        justify-content: normal;
+    }
+}
+@media (min-width: 1367px) {
+    .container {
+        & li {
+            width: 20.4rem;
+        }
+    }
+}
+
+
+
+

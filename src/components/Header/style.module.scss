@@ -1,0 +1,25 @@
+.container {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--grey-scale-0);
+
+    & img {
+        width: 9.5rem;
+        height: 1.5rem;
+        margin: 1rem;
+    
+    }
+    & button {
+        display: flex;
+        border: none;
+        background-color: var(--grey-scale-0);
+        cursor: pointer;
+        margin: 1rem;
+    }
+}
+
